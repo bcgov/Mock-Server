@@ -1,6 +1,8 @@
 FROM node:alpine
 
-COPY . .
+RUN mkdir -p /app
+COPY . /app
+WORKDIR /app
 
 EXPOSE 8080
 
